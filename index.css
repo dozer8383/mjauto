@@ -21,7 +21,8 @@ body {
     height: 72px;
     background-color: #333;
     padding: 0px 16px;
-    position: fixed;
+    position: sticky;
+    top: 0;
     border-bottom: 2px solid #ddd;
     box-shadow: 0px 2px 0px #888;
 }
@@ -30,13 +31,15 @@ body {
     margin: 5px;
 }
 
-a {
+.topbar-link {
     display: block;
     color: white;
     font-weight: bold;
     text-decoration: none;
     margin-left: 32px;
 }
+
+
 
 .current-location {
     color: var(--lightblue);
@@ -52,4 +55,26 @@ a {
     box-shadow: 0 30px 4.1px -17px rgba(255, 255, 255, 0.27) inset, 0 1px 1.3px 1px rgba(255, 255, 255, 0.24) inset;
     background-size: 20px;
     background-image: url(./assets/carbonfiber.png)
+}
+
+.hero {
+    height: 512px;
+    width: 100%;
+    font-family: "Lexend Peta";
+    font-size: 1.5em;
+    letter-spacing: -20%;
+    color: white;
+    box-sizing: border-box;
+    padding: 96px;
+    background-image: url(./assets/bmw1.png);
+    background-position: center;
+    background-size: cover;
+    text-shadow: 0px 5px 5px #000b;
+}
+
+.hero-link {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1em;
+    margin: 0;
 }
