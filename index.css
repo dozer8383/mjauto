@@ -9,13 +9,14 @@ body {
     padding: 0;
     background-color: #222;
     font-family: "Instrument Sans";
-    overflow-x: hidden;
 }
 
 .topbar {
     display: flex;
+    box-sizing: border-box;
     flex-direction: row;
     align-items: center;
+    justify-items: start;
     width: 100%;
     height: 72px;
     background-color: #333;
@@ -41,6 +42,14 @@ a {
     color: var(--lightblue);
 }
 
+.right-align {
+    margin-left: auto;
+}
+
 .carbon-button {
-    
+    padding: 12px 32px;
+    border-radius: 24px;
+    box-shadow: 0 30px 4.1px -17px rgba(255, 255, 255, 0.27) inset, 0 1px 1.3px 1px rgba(255, 255, 255, 0.24) inset;
+    background-size: 20px;
+    background-image: url(./assets/carbonfiber.png)
 }
