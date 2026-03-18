@@ -25,6 +25,54 @@ body {
     top: 0;
     border-bottom: 2px solid #ddd;
     box-shadow: 0px 2px 0px #888;
+    z-index: 9999;
+}
+
+.block1 {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 48px 8px;
+}
+
+.block2 {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    padding: 48px 8px;
+    background-color: #316CDA;
+    font-family: "Lexend Peta";
+    letter-spacing: -18%;
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 48px 8px;
+}
+
+.footer>span {
+    color: white;
+}
+
+.block2>h2 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 24px;
 }
 
 .logo {
@@ -39,8 +87,6 @@ body {
     margin-left: 32px;
 }
 
-
-
 .current-location {
     color: var(--lightblue);
 }
@@ -54,7 +100,48 @@ body {
     border-radius: 24px;
     box-shadow: 0 30px 4.1px -17px rgba(255, 255, 255, 0.27) inset, 0 1px 1.3px 1px rgba(255, 255, 255, 0.24) inset;
     background-size: 20px;
-    background-image: url(./assets/carbonfiber.png)
+    background-image: url(./assets/carbonfiber.png);
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Instrument Sans";
+    text-align: center;
+    letter-spacing: normal;
+}
+
+.carbon-button-big {
+    padding: 16px 64px;
+    border-radius: 48px;
+    box-shadow: 0 30px 4.1px -17px rgba(255, 255, 255, 0.27) inset, 0 1px 1.3px 1px rgba(255, 255, 255, 0.24) inset;
+    background-size: 20px;
+    font-size: 1.5em;
+    background-image: url(./assets/carbonfiber.png);
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Instrument Sans";
+    letter-spacing: normal;
+}
+
+.bubble-header {
+    margin: 0px auto;
+    padding: 16px 64px;
+    border-radius: 48px;
+    font-size: 1.5em;
+    width: 256px;
+    text-align: center;
+    position: absolute;
+}
+
+.bubble-header-container {
+    display: flex;
+    justify-content: center;
+    /* height: 48px; */
+    position: relative;
+    bottom: 30px;
 }
 
 .hero {
@@ -69,7 +156,7 @@ body {
     background-image: url(./assets/bmw1.png);
     background-position: center;
     background-size: cover;
-    text-shadow: 0px 5px 5px #000b;
+    text-shadow: 0px 5px 5px #0008;
 }
 
 .hero-link {
@@ -77,4 +164,57 @@ body {
     font-weight: 500;
     font-size: 1em;
     margin: 0;
+    color: white;
 }
+
+.bubble-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    border-radius: 32px;
+    width: 420px;
+    height: 360px;
+    background-size: cover;
+    background-position: center;
+    margin: 16px;
+    /* font-size: 2.5em; */
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 3px 0 #0008;
+    box-shadow: 0 30px 4.1px -17px rgba(255, 255, 255, 0.27) inset, 0 1px 1.3px 1px rgba(255, 255, 255, 0.24) inset;
+}
+
+.bubble-card>h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.bubble-description {
+    border-radius: 34px;
+    background: #2228;
+    backdrop-filter: blur(10px);
+    font-size: 1em;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 8px; */
+    text-shadow: none;
+}
+
+.bubble-description>a {
+    text-decoration: underline;
+    color: white;
+}
+
+.bubble-description>p {
+    width: 280px;
+}
+
+.interior { background-image: url(./assets/bmw3.png); }
+.exterior { background-image: url(./assets/bmw4.png); }
+.package { background-image: url(./assets/bmw2.png); }
